@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim Salah</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <!-- <li><a href="#Media" class="navigation__link">Media</a></li> -->
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#myClients"
+                class="navigation__link navigation__myClients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio__part">
+          <h1 class="bio__heading">Hi There, I’M A Frontend Developer</h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Ibrahim Salah</span>, a Frontend
+            trainee at
+            <a class="bio__almdrasa" href="https://www.almdrasa.com/"
+              >Almdrasa.com</a
+            >, and content creator who publishes content on
+            <a
+              class="bio__facebook"
+              href="https://web.facebook.com/profile.php?id=100003123251912"
+              target="_blank"
+              >Facebook</a
+            >,
+            <a
+              class="bio__twitter"
+              href="https://mobile.twitter.com/ibra7salah"
+              target="_blank"
+              >Twitter</a
+            >,
+            <a
+              class="bio__linkedin"
+              href="https://www.linkedin.com/in/ibra7salah/"
+              target="_blank"
+              >LinkedIn</a
+            >.
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a
+            href="/IbrahimSalahCv.pdf"
+            class="bio__links find-out-link"
+            target="_blank"
+            >Download CV <span class="bio__arrow"> ↓ </span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="images/pic-personal.png"
+            alt="image of Ibrahim"
+          />
+        </div>
+      </section>
+
+      <section class="skills section section--with-bg" id="skills">
+        <h2 class="h2-heading">SKILLS</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="year">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="year">0 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="year">0 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="year">0 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="year">0 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React testing library</h2>
+            <span class="year">0 year</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- <section id="media" class="media section">
+        <video class="media__video" src="./video.mp4" controls></video>
+      </section> -->
+
+      <section class="projects section" id="projects">
+        <h2 class="h2-heading">MY FEATURED <br />PROJECTS</h2>
+        <div class="project__part">
+          <img
+            src="/images/screenshot-qr-code-challenge.png"
+            alt="screenshot-qr-code-challenge"
+            class="projects__img"
+          />
+          <div class="project__text">
+            <h3 class="h3-heading">Qr Code <br />Component</h3>
+            <p class="project__description">
+              This project is a simple QR code component challenge from Frontend
+              Mentor. The goal is to build a QR code component and get it to
+              look as close as possible to the provided design.
+            </p>
+            <a
+              href="https://ibra7salah.github.io/qr-code-component-challenge/"
+              target="_blank"
+              class="projects__links live"
+              >Live Site URL</a
+            >
+            <span>-</span>
+            <a
+              href="https://www.frontendmentor.io/solutions/qr-code-component-challenge-public-DlULqXFKAc"
+              target="_blank"
+              class="projects__links"
+              >Frontend Mentor Solution</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="clients section section--with-bg" id="myClients">
+        <h2 class="h2-heading">What My <br />Clients Says</h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              quod perferendis atque, autem laudantium magni iste, nesciunt rem
+              dolorum nihil et itaque cumque dolor iusto quibusdam facilis rerum
+              odio esse?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              quod perferendis atque, autem laudantium magni iste, nesciunt rem
+              dolorum nihil et itaque cumque dolor iusto quibusdam facilis rerum
+              odio esse?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              quod perferendis atque, autem laudantium magni iste, nesciunt rem
+              dolorum nihil et itaque cumque dolor iusto quibusdam facilis rerum
+              odio esse?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__main">
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk <br />
+            over email, especially since we may be a few time <br />zones away.
+          </p>
+          <a href="mailto:ibra20salah@outlook.com" class="contact__mail"
+            >ibra20salah@outlook.com</a
+          >
+          <div class="contact__socials">
+            <a
+              href="https://web.facebook.com/profile.php?id=100003123251912"
+              class="contact__social"
+              target="_blank"
+              ><img src="/images/brand/facebook.svg" alt="facebook icon"
+            /></a>
+            <a
+              href="https://x.com/ibra7salah"
+              class="contact__social"
+              target="_blank"
+              ><img src="/images/brand/twitter.svg" alt="twitter icon"
+            /></a>
+            <a
+              href="https://github.com/ibra7salah"
+              class="contact__social"
+              target="_blank"
+              ><img src="/images/brand/github.svg" alt="github icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/ibra7salah/"
+              class="contact__social"
+              target="_blank"
+              ><img src="/images/brand/LinkedIn.svg" alt="linkedin icon"
+            /></a>
+          </div>
+        </div>
+        <div class="contact__formContact">
+          <h2 class="h2-heading">Let’s Work <br />Together!</h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                name="fullName"
+                id="fname"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="Phone No."
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input class="contact__button" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2025 by Ibrahim Salah</footer>
+    </div>
+  </body>
+</html>
