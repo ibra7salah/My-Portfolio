@@ -1,0 +1,38 @@
+.project__part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 7.5rem;
+  column-gap: 7.4rem;
+}
+
+.projects__img {
+  max-width: 100%;
+  border-radius: 2rem;
+  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); */
+}
+
+.project__text {
+  align-self: center;
+}
+
+.project__description {
+  font-family: var(--font-family-raleway);
+  line-height: 1.5;
+}
+
+.projects__links {
+  color: var(--color-dark-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+  margin-top: 2.3rem;
+}
+
+.projects__links::after {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("./images/external-icon.png");
+  background-size: contain;
+  margin-left: 0.6rem;
+}

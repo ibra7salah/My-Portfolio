@@ -12,15 +12,23 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
     <div class="container">
       <video class="video-loop" autoplay loop muted>
-        <source src="./video-loop.mp4" type="video/mp4" />
+        <source src="/assets/video-loop.mp4" type="video/mp4" />
       </video>
 
       <header class="header">
+        <label class="burger-menu" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
@@ -93,7 +101,7 @@
           </p>
           <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
           <a
-            href="/IbrahimSalahCv.pdf"
+            href="/assets/IbrahimSalahCv.pdf"
             class="bio__links find-out-link"
             target="_blank"
             >Download CV <span class="bio__arrow"> ↓ </span></a
@@ -228,10 +236,7 @@
                 src="images/brand/twitter.svg"
                 alt="twitter icon"
             /></a>
-            <a
-              href="https://github.com/ibra7salah"
-              class="contact__social"
-              target="_blank"
+            <a href="https://github.com/ibra7salah" class="contact__social"
               ><img
                 type="image/svg+xml"
                 src="images/brand/github.svg"

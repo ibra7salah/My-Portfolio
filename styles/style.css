@@ -35,7 +35,7 @@
   --filter-icon: contrast(4);
   --brightness-img: brightness(4);
 }
-/* CSS Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -65,17 +65,14 @@ ol {
   list-style: none;
 }
 
-/* End CSS Reset*/
-/* Global Styles */
-
-/* Global Styles End */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 11rem;
   font-size: 62.5%;
 }
+
 body,
-[type="submit"] {
+[type=submit] {
   font-size: 1.6rem;
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -91,8 +88,8 @@ body,
   max-width: calc(var(--container-width) + var(--gutter) * 2);
   padding-inline: var(--gutter);
 }
-/* video-loop  start*/
 
+/* video-loop  start*/
 .video-loop {
   position: fixed;
   top: 0;
@@ -102,10 +99,8 @@ body,
   opacity: 0.07;
   z-index: -1;
 }
+
 /* video start end */
-
-/* start global styles */
-
 .section {
   display: grid;
   position: relative;
@@ -143,8 +138,6 @@ body,
   margin-bottom: 2.7rem;
 }
 
-/* end global styles */
-
 .header {
   padding: 3rem 0;
   position: sticky;
@@ -164,6 +157,10 @@ body,
   top: 0;
   z-index: -1;
   background-color: var(--color-background);
+}
+
+.navigation {
+  transition: var(--transition-timing);
 }
 
 .navigation__list {
@@ -191,6 +188,10 @@ body,
   color: var(--color-blue);
   text-decoration: underline;
   font-weight: var(--font-weight-bold);
+}
+
+.burger-menu__checkbox {
+  display: none;
 }
 
 /* Toggle */
@@ -239,8 +240,8 @@ body,
   transform: translateX(2.1rem);
   background-color: var(--color-green);
 }
-/* toggle end */
 
+/* toggle end */
 .bio {
   column-gap: 7.4rem;
   -moz-column-gap: 7.4rem;
@@ -269,12 +270,15 @@ body,
   color: var(--color-green);
   text-decoration: none;
 }
+
 .bio__facebook {
   color: var(--color-blue);
 }
+
 .bio__twitter {
   color: var(--color-light-blue);
 }
+
 .bio__linkedin {
   color: var(--color-dark-blue);
 }
@@ -304,14 +308,12 @@ body,
     transform: translateY(0);
   }
 }
-
 .bio__arrow {
   display: inline-block;
   animation: jump 1s infinite alternate ease-in-out;
 }
 
 /* bio pic */
-
 .bio__pic-content {
   display: flex;
   position: relative;
@@ -334,13 +336,12 @@ body,
   width: 42.7rem;
   border-radius: 1.8rem;
 }
+
 .bio__links {
   font-size: 2.4rem;
   font-weight: var(--font-weight-semi-bold);
   text-decoration: none;
 }
-
-/* skills start */
 
 .skills__list {
   grid-template-columns: repeat(3, 1fr);
@@ -350,7 +351,9 @@ body,
 
 .skills__item {
   transition: var(--transition-timing);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .skills__title {
@@ -367,28 +370,13 @@ body,
 .skills__item:hover {
   text-shadow: 0 0 2px var(--color-green);
 }
-/* skills end */
-
-/* media start */
-/* 
-.media {
-  align-items: center;
-  justify-content: center;
-}
-
-.media__video {
-  max-width: 100%;
-} */
-
-/* media end */
-
-/* Projects start */
 
 .project__part {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 7.5rem;
-  column-gap: 7.4rem;
+  -moz-column-gap: 7.4rem;
+       column-gap: 7.4rem;
 }
 
 .projects__img {
@@ -423,9 +411,6 @@ body,
   margin-left: 0.6rem;
 }
 
-/* projects end */
-
-/* start clients */
 .clients__opinions {
   grid-column: 1/-1;
   font-size: var(--font-size-40);
@@ -443,15 +428,14 @@ body,
   flex-shrink: 0;
   scroll-snap-align: start;
 }
-/* end clients */
-
-/* start contact */
 
 .contact {
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20rem;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
   align-items: center;
 }
+
 .contact__description {
   line-height: 1.9;
   font-size: var(--font-size-20);
@@ -512,19 +496,12 @@ form:invalid::after {
   color: var(--color-red);
 }
 
-/* end contact */
-
-/* start footer */
-
 .footer {
   padding: 1rem 0;
   border-top: 0.1rem solid var(--color-input-border);
   font-size: var(--font-size-15);
 }
 
-/* end footer */
-
-/* theme */
 html:has(.toggle__checkbox:checked) {
   --color-background: var(--color-black);
   --color-text: var(--color-white);
@@ -536,4 +513,95 @@ html:has(.toggle__checkbox:checked) {
   --filter-icon: var(--brightness-img);
 }
 
-/* end theme */
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    row-gap: 8rem;
+  }
+  .section {
+    grid-template-columns: 1fr;
+  }
+  .bio__pic-content {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project__part {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: center;
+  }
+  .project__text:nth-of-type(2) {
+    order: 1;
+  }
+  .clients__opinions {
+    font-size: var(--font-size-24);
+  }
+  .contact {
+    row-gap: 6rem;
+  }
+  .contact__formContact {
+    order: -1;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 0;
+  }
+  .header::before {
+    z-index: 0;
+  }
+  .bio__pic {
+    width: 100%;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+    z-index: 0;
+    align-self: center;
+  }
+  .burger-menu__bar {
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+  .burger-menu__checkbox:checked + .navigation {
+    top: 100%;
+  }
+  .navigation {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    background-color: var(--color-background);
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid var(--color-background);
+    z-index: -1;
+  }
+  .navigation__list {
+    justify-content: center;
+  }
+  .toggle {
+    padding: 3rem 0;
+    z-index: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
